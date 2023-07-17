@@ -1,0 +1,189 @@
+/* Для экранов с шириной до 1299px */
+
+@media (max-width: 1299px) {
+
+    .intro {
+        height: 600px;
+    }
+
+    .intro__inner {
+        max-width: 710px;
+    }
+
+    .intro__title {
+        margin: 0 0 30px;
+        font-size: 40px;
+    }
+
+    .intro__subtitle {
+        margin-bottom: 45px;
+        font-size: 18px;
+    }
+
+    /* btn */
+    .btn {
+        color: #fff;
+        font-size: 12px;
+        padding: 10px 35px;
+    }
+
+    /* works */
+    .works {
+        flex-wrap: wrap;
+    }
+
+    .works__item {
+        width: 22%;
+        height: 300px;
+    }
+
+    .works__item:last-child {
+        margin-right: 0;
+    }
+
+    .works__item:hover .works__content {
+        opacity: 1;
+    }
+
+    .works__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    .works__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(232, 69, 69, 0.9);
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        transition: opacity 0.2s linear;
+    }
+
+    .works__title {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 5px;
+    }
+
+    .works__text {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    /* review */
+    /*
+    .review__photo {
+        right: -8%;
+        transform: translate(8%, -50%);
+    } */
+
+    .review__content {
+        margin-left: 50px;
+    }
+
+    .review__text {
+        font-size: 28px;
+    }
+
+    .review__name {
+        font-size: 10px;
+    }
+
+}
+
+/* Для экранов с шириной до 899px */
+@media (max-width: 899px) {
+
+    .works__item {
+        height: 200px;
+    }
+
+    /* team */
+
+
+    .team__item {
+        width: 21%;
+    }
+
+    .team__name {
+        font-size: 18px;
+    }
+
+    .team__prof {
+        font-size: 11px;
+        margin-bottom: 10px;
+
+    }
+
+    .team__text {
+        font-size: 12px;
+    }
+
+    /* review */
+
+    .review__text {
+        font-size: 20px;
+    }
+
+    .review__name {
+        font-size: 8px;
+    }
+}
+
+/* Для экранов с шириной до 599px */
+@media (max-width: 599px) {
+    .header__inner {
+        align-items: flex-start;
+    }
+
+    .intro__title {
+        font-size: 25px;
+    }
+
+    .intro__subtitle {
+        font-size: 15px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block
+    }
+
+    .features {
+
+        flex-direction: column;
+    }
+
+    .features__item {
+        width: 100%;
+    }
+
+    .review {
+        flex-direction: column;
+    }
+
+    .review__img,
+    .review__content {
+        width: 100%;
+    }
+
+    .review__content {
+        padding: 20px;
+        margin: 0px;
+    }
+}
